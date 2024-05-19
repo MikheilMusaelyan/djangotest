@@ -1,25 +1,25 @@
 from rest_framework import serializers
 from base.models import Event, CustomUser
 
-# class EventSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Event
-#         fields = ['start', 'end', 'date', 'color', 'name', 'id']
+class EventSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Event
+        fields = ['start', 'end', 'date', 'color', 'name', 'id']
 
-# class PutEventSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Event
-#         fields = ['start', 'end', 'color', 'name', 'id']
+class PutEventSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Event
+        fields = ['start', 'end', 'color', 'name', 'id']
 
-# class UpcomingEventSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Event
-#         fields = ['start', 'end', 'date', 'color', 'name']
+class UpcomingEventSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Event
+        fields = ['start', 'end', 'date', 'color', 'name']
 
-# class SearchEventSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Event
-#         fields = '__all__'
+class SearchEventSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Event
+        fields = '__all__'
 
 # class CustomUserSerializer(serializers.ModelSerializer):
 #     class Meta:

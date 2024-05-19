@@ -18,7 +18,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-f0dlo2r^&v@z_8&gnaxo@0i)qfs%*1*y++mamlolwym5d1rfk6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 CSRF_TRUSTED_ORIGINS = ['https://drf.up.railway.app', 'http://127.0.0.1:8000/api/index', 'http://127.0.0.1:8000', 'https://djangotest-production-31a9.up.railway.app/admin/login/?next=/admin/']
@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 ]
 
 
-# AUTH_USER_MODEL = 'base.CustomUser'
+AUTH_USER_MODEL = 'base.CustomUser'
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(hours=1),
