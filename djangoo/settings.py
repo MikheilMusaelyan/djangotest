@@ -21,7 +21,7 @@ SECRET_KEY = 'django-insecure-f0dlo2r^&v@z_8&gnaxo@0i)qfs%*1*y++mamlolwym5d1rfk6
 DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ['https://drf.up.railway.app', 'http://127.0.0.1:8000/']
+CSRF_TRUSTED_ORIGINS = ['https://drf.up.railway.app', 'http://127.0.0.1:8000/api/index', 'http://127.0.0.1:8000', 'https://djangotest-production-31a9.up.railway.app/admin/login/?next=/admin/']
 
 
 # Application definition
